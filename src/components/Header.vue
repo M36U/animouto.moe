@@ -37,5 +37,11 @@
     width: 48px;
     padding-left: 3px;
     padding-right: 3px;
+    transition: .1s;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+  }
+
+  .link-icon:hover {
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2)) saturate(1.5);
   }
 </style>
