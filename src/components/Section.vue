@@ -1,11 +1,11 @@
 <template>
   <div class="section">
-    <div class="component-container">
+    <div :class="'component-container' + (right ? '' : ' left')">
       <div class="details">
         <h1>{{ data.title }}</h1>
         <p v-for="detail in data.details"><span v-html="detail"></span></p>
       </div>
-      <img :class="'preview' + (right ? '' : ' left')" :src="'/static/preview_' + data.preview + '.png'" alt="data.title"/>
+      <img class="preview" :src="'/static/preview_' + data.preview + '.png'" alt="data.title"/>
     </div>
   </div>
 </template>
@@ -29,27 +29,35 @@
     border-top: rgb(var(--color-blue)) solid 3px;
   }
 
+  .component-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
   .details {
-    display: inline-block;
     padding-right: 50px;
     width: 44%;
   }
 
   .preview {
-    float: right;
+    margin: auto;
     height: 95%;
-    padding-top: 12px;
     filter: drop-shadow(0 0 0.25rem black);
   }
 
   .left {
-    float: left;
+    flex-direction: row-reverse;
   }
 
   @media screen and (max-width: 1125px) {
     .section {
       height: fit-content;
       padding-bottom: 10px;
+    }
+
+    .component-container {
+      flex-direction: column;
     }
 
     .details {
