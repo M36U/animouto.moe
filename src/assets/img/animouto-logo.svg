@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512mm" height="256mm" viewBox="0 0 1814.2 1814.2">
-  <text x="656.5" y="628.9" fill="#0098fd" font-family="sans-serif" font-size="142" font-weight="400" letter-spacing="0" style="line-height:125%" transform="translate(0 762)" word-spacing="0">
-    <tspan x="656.5" y="628.9" font-family="Tahoma" font-size="1331.1" font-weight="700" style="-inkscape-font-specification:'Tahoma Bold'">M</tspan>
-  </text>
-  <text x="82" y="468.5" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" transform="matrix(3.54965 0 0 3.54965 -218.4 -272)" word-spacing="0">
-    <tspan x="82" y="468.5" fill="#fff" font-family="Tahoma" font-size="375" font-weight="700" style="-inkscape-font-specification:'Tahoma Bold'">A</tspan>
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="512mm" height="350mm" viewBox="0 0 1814.2 1240.2">
+  <g style="line-height:125%">
+    <path fill="#0098fd" d="M756.7 136.1V1104h228.8V462.4l176.1 414h165.7l176.2-414V1104h241.8V136.1H1465l-213.8 477.7-214.5-477.7H756.7z" />
+  </g>
+  <g style="line-height:125%">
+    <path fill="#fff" d="M395.8 136.2L69 1104h243.7l60.5-197.6h304.2l60.4 197.6H988L661 136.2H395.8zm129.4 275.6L624 731H426.4l98.8-319z" />
+  </g>
 </svg>

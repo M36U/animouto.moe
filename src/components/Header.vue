@@ -26,9 +26,9 @@
   }
 
   .logo {
+    padding-top: 20px;
     display: block;
-    width: 100%;
-    max-width: 512px;
+    max-width: 256px;
     margin: 0 auto;
     text-align: center;
   }
