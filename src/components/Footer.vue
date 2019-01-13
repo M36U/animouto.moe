@@ -40,10 +40,6 @@
   }
 
   .copyright {
-    padding-top: 5px;
-    padding-right: 10px;
-    height: 50px;
-    line-height: 15px;
     font-size: x-small;
     align-items: self-end;
   }
