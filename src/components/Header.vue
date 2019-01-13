@@ -9,7 +9,6 @@
 
     <a href="https://chrome.google.com/webstore/detail/animouto/ilhjhegbgdghfkdgeahkpikkjgaaoklh" target="_blank"><img src="../assets/img/chrome-logo.svg" class="link-icon"></a>
     <img src="../assets/img/firefox-logo.png" class="link-icon" style="filter:grayscale(100%);cursor:not-allowed;" title="Not currently available">
-    <a href="https://github.com/TehNut/AniMouto" target="_blank"><img src="../assets/img/github-logo.png" class="link-icon"></a>
     <br />
     <br />
   </div>

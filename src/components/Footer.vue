@@ -1,14 +1,17 @@
 <template>
   <div id="footer">
-    <div class="copyright">
-      <p>
-        © Nicholas "TehNut" Ignoffo {{new Date().getFullYear()}}
-        <br>
-        I'm not a web dev leave me alone
-      </p>
-    </div>
-    <div class="links">
-
+    <div class="component-container">
+      <div class="copyright flex-child">
+        <p>
+          © Nicholas "TehNut" Ignoffo {{new Date().getFullYear()}}
+          <br>
+          I'm not a web dev leave me alone
+        </p>
+      </div>
+      <div class="links flex-child">
+        <a href="https://github.com/TehNut/AniMouto" target="_blank"><img src="../assets/img/github-logo.png" class="link-icon"></a>
+        <a href="https://anilist.co/user/TehNut" target="_blank"><img src="../assets/img/anilist-logo.svg" class="link-icon"></a>
+      </div>
     </div>
   </div>
 </template>
@@ -25,10 +28,28 @@
     width: 100%;
   }
 
+  .component-container {
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+
+  .flex-child {
+    margin: auto;
+    width: 200px;
+  }
+
   .copyright {
     padding-top: 5px;
+    padding-right: 10px;
     height: 50px;
     line-height: 15px;
     font-size: x-small;
+    align-items: self-end;
+  }
+
+  .links img {
+    align-items: self-start;
+    width: 32px;
   }
 </style>
