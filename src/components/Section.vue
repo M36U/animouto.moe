@@ -2,8 +2,8 @@
   <div class="section">
     <div :class="'component-container' + (right ? '' : ' left')">
       <div class="details">
-        <h1>{{ data.title }}</h1>
-        <p v-for="detail in data.details"><span v-html="detail"></span></p>
+        <h1 class="highlight" style="padding-bottom:20px;">{{ data.title }}</h1>
+        <p v-for="detail in data.details" style="padding-bottom:5px;"><span v-html="detail"></span></p>
       </div>
       <img class="preview" :src="'/static/preview_' + data.preview + '.png'" alt="data.title"/>
     </div>
@@ -22,9 +22,11 @@
 
 <style scoped>
   .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: relative;
     background: rgb(var(--color-foreground));
-    background: linear-gradient(rgb(var(--color-foreground)) 0%, rgba(var(--color-foreground), .5) 50%, rgba(var(--color-foreground), 0) 100%);
+    background: linear-gradient(0deg, rgba(29,39,52,1) 0%, rgba(32,41,54,1) 100%);
     height: 500px;
     border-top: rgb(var(--color-blue)) solid 3px;
   }
@@ -43,7 +45,8 @@
   .preview {
     margin: auto;
     height: 95%;
-    filter: drop-shadow(0 0 0.25rem black);
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+    border: rgba(0, 0, 0, 0.1) solid 1px;
   }
 
   .left {
