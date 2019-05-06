@@ -8,7 +8,7 @@
     <p class="description"><span class="highlight">AniMouto</span> is designed to feel like a true extension to <span class="highlight">AniList</span> by providing a very similar look and feel.</p>
 
     <a href="https://chrome.google.com/webstore/detail/animouto/ilhjhegbgdghfkdgeahkpikkjgaaoklh" target="_blank"><img src="../assets/img/chrome-logo.svg" class="link-icon"></a>
-    <img src="../assets/img/firefox-logo.png" class="link-icon" style="filter:grayscale(100%);cursor:not-allowed;" title="Not currently available">
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/animouto/" target="_blank"><img src="../assets/img/firefox-logo.png" class="link-icon"></a>
     <br />
     <br />
   </div>
