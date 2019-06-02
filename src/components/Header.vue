@@ -21,6 +21,10 @@
 </script>
 
 <style scoped>
+  .component-container {
+    width: 40%;
+  }
+
   .description {
     color: rgb(var(--color-text-light));
   }

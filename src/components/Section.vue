@@ -34,12 +34,12 @@
   .component-container {
     display: flex;
     align-items: center;
-    flex-flow: row wrap;
   }
 
   .details {
     padding-right: 50px;
     width: 44%;
+    min-width: 200px;
   }
 
   .preview {

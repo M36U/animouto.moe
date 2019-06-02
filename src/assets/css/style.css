@@ -23,7 +23,7 @@ a:hover {
 }
 
 .component-container {
-  width: 50%;
+  width: 45%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -57,12 +57,12 @@ a:hover {
 
 @media screen and (max-width: 1682px) {
   .component-container {
-    width: 75%;
+    justify-content: center;
   }
 }
 
 @media screen and (max-device-width: 500px) {
   .component-container {
-    width: 90%;
+    width: 90% !important;
   }
 }
