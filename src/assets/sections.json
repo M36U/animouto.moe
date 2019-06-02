@@ -16,6 +16,14 @@
     "preview": "search"
   },
   {
+    "title": "Detailed View",
+    "details": [
+      "Inline detail pages to get a quick idea of what the series is about. View the description, relations, and more in a simple layout.",
+      "This view is available from both the Current Media and Search pages."
+    ],
+    "preview": "detail"
+  },
+  {
     "title": "Notifications",
     "details": [
       "View your notifications without opening the site.",
@@ -27,7 +35,7 @@
   {
     "title": "Forum Activity",
     "details": [
-      "See what's going on on the forum at a glance."
+      "See what's going on on the forum at a glance. For example, keeping an eye out for new posts in the <a href=\"https://anilist.co/forum/thread/7424\" target=\"_blank\">AniMouto thread</a>."
     ],
     "preview": "forum"
   }
