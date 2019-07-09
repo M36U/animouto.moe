@@ -53,6 +53,11 @@
     flex-direction: row-reverse;
   }
 
+  .left .details {
+    padding-right: 0;
+    padding-left: 50px;
+  }
+
   @media screen and (max-width: 1125px) {
     .section {
       height: fit-content;
