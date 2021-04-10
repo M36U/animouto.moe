@@ -12,6 +12,9 @@
         <a href="https://github.com/TehNut/AniMouto" target="_blank"><img src="../assets/img/github-logo.png" class="link-icon"></a>
         <a href="https://anilist.co/user/TehNut" target="_blank"><img src="../assets/img/anilist-logo.svg" class="link-icon"></a>
       </div>
+      <div class="links flex-child">
+        <router-link to="/privacy">Privacy Policy</router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -36,7 +39,6 @@
 
   .flex-child {
     margin: auto;
-    width: 200px;
   }
 
   .copyright {

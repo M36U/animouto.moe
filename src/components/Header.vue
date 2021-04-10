@@ -3,14 +3,15 @@
     <img src="../assets/img/animouto-logo.svg" alt="AniMouto logo" class="logo">
     <h1>AniMouto</h1>
     <h3>Let an imouto enhance your AniList experience.</h3>
+    <slot>
+      <p class="description"><span class="highlight">AniMouto</span> is an unofficial <span class="highlight">AniList</span> extension which allows quick access to many features of <span class="highlight">AniList</span> including your current Airing, Anime, and Manga lists, notifications, recent forum activity, and search.</p>
+      <p class="description"><span class="highlight">AniMouto</span> is designed to feel like a true extension to <span class="highlight">AniList</span> by providing a very similar look and feel.</p>
 
-    <p class="description"><span class="highlight">AniMouto</span> is an unofficial <span class="highlight">AniList</span> extension which allows quick access to many features of <span class="highlight">AniList</span> including your current Airing, Anime, and Manga lists, notifications, recent forum activity, and search.</p>
-    <p class="description"><span class="highlight">AniMouto</span> is designed to feel like a true extension to <span class="highlight">AniList</span> by providing a very similar look and feel.</p>
-
-    <a href="https://chrome.google.com/webstore/detail/animouto/ilhjhegbgdghfkdgeahkpikkjgaaoklh" target="_blank"><img src="../assets/img/chrome-logo.svg" class="link-icon"></a>
-    <a href="https://addons.mozilla.org/en-US/firefox/addon/animouto/" target="_blank"><img src="../assets/img/firefox-logo.png" class="link-icon"></a>
-    <br />
-    <br />
+      <a href="https://chrome.google.com/webstore/detail/animouto/ilhjhegbgdghfkdgeahkpikkjgaaoklh" target="_blank"><img src="../assets/img/chrome-logo.svg" class="link-icon"></a>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/animouto/" target="_blank"><img src="../assets/img/firefox-logo.png" class="link-icon"></a>
+      <br />
+      <br />
+    </slot>
   </div>
 </template>
 

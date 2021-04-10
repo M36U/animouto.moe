@@ -1,46 +1,14 @@
 <template>
   <div id="app">
-    <Header />
-    <Section v-for="(section, index) in getSections" :key="section.preview" :data="section" :right="index % 2 === 0"></Section>
-    <Footer />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
-import Section from '@/components/Section'
-import Footer from "@/components/Footer";
+
 
 export default {
   name: 'App',
-  components: {
-    Header,
-    Section,
-    Footer
-  },
-  data() {
-    return {
-      sections: [
-        {
-          title: "Current Media",
-          details: [
-            "Quickly access and increment your in-progress Anime and Manga from anywhere.",
-            "test"
-          ],
-          preview: "watching"
-        },
-        {
-          title: "Test 2",
-          preview: "search"
-        }
-      ]
-    }
-  },
-  computed: {
-    getSections() {
-      return require("@/assets/sections.json");
-    }
-  }
 }
 </script>
 

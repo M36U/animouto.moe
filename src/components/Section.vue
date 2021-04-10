@@ -1,11 +1,11 @@
 <template>
-  <div class="section">
-    <div :class="'component-container' + (right ? '' : ' left')">
+  <div class="section" :class="{ 'long-boi': longBoi }">
+    <div class="component-container" :class="{ left: right === false, center: right === undefined }">
       <div class="details">
         <h1 class="highlight" style="padding-bottom:20px;">{{ data.title }}</h1>
-        <p v-for="detail in data.details" style="padding-bottom:5px;"><span v-html="detail"></span></p>
+        <p v-for="detail in data.details" style="padding-bottom:5px;" :key="detail.title"><span v-html="detail"></span></p>
       </div>
-      <img class="preview" :src="'/static/preview_' + data.preview + '.png'" alt="data.title"/>
+      <img v-if="data.preview" class="preview" :src="'/static/preview_' + data.preview + '.png'" alt="data.title"/>
     </div>
   </div>
 </template>
@@ -15,7 +15,8 @@
     name: "Section",
     props: [
       "data",
-      "right"
+      "right",
+      "longBoi"
     ]
   }
 </script>
@@ -29,6 +30,10 @@
     background: linear-gradient(0deg, rgba(29,39,52,1) 0%, rgba(32,41,54,1) 100%);
     height: 500px;
     border-top: rgb(var(--color-blue)) solid 3px;
+  }
+
+  .section.long-boi {
+    height: fit-content;
   }
 
   .component-container {
@@ -51,6 +56,15 @@
 
   .left {
     flex-direction: row-reverse;
+  }
+
+  .center {
+    justify-content: center;
+  }
+
+  .center .details {
+    padding: 0;
+    width: 80%;
   }
 
   .left .details {
