@@ -1,4 +1,4 @@
-<div class="w-1/3 flex flex-col mx-auto text-center prose prose-h2:text-anilist-text prose-p:text-anilist-text">
+<div class="w-4/5 md:w-1/3 flex flex-col mx-auto text-center prose prose-h2:text-anilist-text prose-p:text-anilist-text">
   <h1 class="text-anilist-blue">Privacy Policy</h1>
   <h2>What information is being stored within the extension?</h2>
   <p>The preferences that the user sets within the options page as well as an API token for interacting with the AniList API are all stored locally using the Storage Local API.</p>
