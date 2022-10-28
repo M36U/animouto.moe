@@ -24,7 +24,7 @@
     description: "A little sister to enhance your AniList experience.",
     url: "https://animouto.moe",
     images: [
-      { url: "/logo_1024px_bg.png", width: 1024, height: 1024 },
+      { url: "/logo_1024x_bg.png", width: 1024, height: 1024 },
       { url: "/logo_128px_bg.png", width: 128, height: 128 },
     ],
     type: "website",
