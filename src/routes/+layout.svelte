@@ -1,5 +1,8 @@
 <script lang="ts">
+  import { MetaTags } from "svelte-meta-tags";
   import "../app.postcss";
+
+  export const prerender = true;
 
   let lastScrollY = 0;
   let showNav = true;
@@ -10,12 +13,22 @@
   }
 </script>
 
-<svelte:head>
-  <title>AniMouto</title>
-</svelte:head>
-
 <svelte:window
   on:scroll={e => onScroll(e)}
+/>
+
+<MetaTags 
+  title="AniMouto"
+  openGraph={{
+    title: "AniMouto",
+    description: "A little sister to enhance your AniList experience.",
+    url: "https://animouto.moe",
+    images: [
+      { url: "/logo_1024px_bg.png", width: 1024, height: 1024 },
+      { url: "/logo_128px_bg.png", width: 128, height: 128 },
+    ],
+    type: "website",
+  }}
 />
 
 <div class="w-full min-h-screen h-full flex flex-col space-between bg-anilist-bg text-anilist-text">
